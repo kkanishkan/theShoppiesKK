@@ -1,5 +1,7 @@
-The Shoppies
+# The Shoppies
+### By: Kanishkan Kukarajah
 
+#### Checklist
 Checklist
 - [X] Create React App
 - [X] Setup Express
