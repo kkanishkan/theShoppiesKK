@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 import { Route, Switch } from 'react-router-dom';
 
 import Header from './components/Header';
@@ -8,7 +8,7 @@ const AppRoutes = () => (
   <div>
     <Header/>
     <Switch>
-      <Route exact='/' component={Home}/>
+      <Route exact path='/' component={Home}/>
     </Switch>
   </div>
 );
