@@ -1,56 +1,27 @@
 {
   "name": "shoppies",
-  "version": "0.1.0",
-  "private": true,
-  "dependencies": {
-    "@material-ui/core": "^4.11.0",
-    "@material-ui/icons": "^4.9.1",
-    "@material-ui/styles": "^4.10.0",
-    "@testing-library/jest-dom": "^4.2.4",
-    "@testing-library/react": "^9.3.2",
-    "@testing-library/user-event": "^7.1.2",
-    "body-parser": "^1.18.3",
-    "cors": "^2.8.4",
-    "dotenv": "^8.1.0",
-    "epilogue": "^0.7.1",
-    "express": "^4.16.3",
-    "final-form": "^4.18.5",
-    "lodash": "^4.17.10",
-    "moment": "^2.22.2",
-    "npm-run-all": "^4.1.5",
-    "prop-types": "^15.7.2",
-    "react": "^16.13.1",
-    "react-apollo": "^2.1.11",
-    "react-dom": "^16.13.1",
-    "react-final-form": "^6.3.0",
-    "react-router-dom": "^5.2.0",
-    "react-scripts": "3.4.3",
-    "recompose": "^0.30.0",
-    "sequelize": "^4.44.3",
-    "sqlite3": "^4.1.0"
-  },
+  "version": "1.0.0",
+  "description": "#### Checklist - [X] Create React App - [X] Setup Express - [X] Create account and get API key - [X] Create header - [X] Create React Router - [] Test Express - [] Create Search app.get within express",
+  "main": "index.js",
   "scripts": {
-    "start": "npm-run-all --parallel watch:server start:web",
-    "start:web": "react-scripts start",
-    "start:server": "node src/server",
-    "watch:server": "nodemon --watch src/server src/server",
-    "build": "react-scripts build",
-    "test": "react-scripts test --env=jsdom",
-    "eject": "react-scripts eject"
+    "start": "node index.js",
+    "heroku-postbuild": "cd client && npm install && npm run build"
   },
-  "eslintConfig": {
-    "extends": "react-app"
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kkanishkan/theShoppiesKK.git"
   },
-  "browserslist": {
-    "production": [
-      ">0.2%",
-      "not dead",
-      "not op_mini all"
-    ],
-    "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
-    ]
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kkanishkan/theShoppiesKK/issues"
+  },
+  "homepage": "https://github.com/kkanishkan/theShoppiesKK#readme",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "path": "^0.12.7",
+    "request": "^2.88.2"
   }
 }
